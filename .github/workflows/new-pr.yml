@@ -24,7 +24,7 @@ jobs:
         echo "Login health check"
         curl --connect-timeout 2 -sSf -k -u "$USER:$PW" $URL/login
         
-    - name: send_run_log
+    - name: send_run_logc
       continue-on-error: true
       env:
         URL: ${{env.API_URL}}
